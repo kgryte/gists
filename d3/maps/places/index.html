@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+			}
+
+			.geo-globe {
+				fill: rgba(0,0,0,0.1);
+			}
+
+			.geo-path {
+				fill: #132A50; 
+				stroke: #FFFFFF;
+				stroke-width: 0.2;
+			}
+
+				.geo-path:hover {
+					fill: #3B5998;
+				}
+
+			.geo-node {
+				stroke-width: 0.0;
+				stroke: rgba(255, 0, 10, 0.66); 
+				fill: rgba(255, 0, 10, 0.66); 
+			    
+			    cursor: pointer;                
+			}
+
+				.geo-node:hover {
+					stroke: #a00;
+					fill: #a00;
+				}
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<script>
+			// Initialize some variables:
+			var element = 'body',
+				width = $(document).width(),
+				height = $(document).height();
+
+			var radius = 10,	// px
+				hoverRadius = 20; // px
+
+			var features, circles;
+		    
+			// Define the type of map projection we want: (see https://github.com/mbostock/d3/wiki/Geo-Projections)
+		    var projection = d3.geo.orthographic()
+			    .scale(250) // scale the map
+			    .translate([width / 2, height / 2]) // set the center of the map to be the center of the canvas
+			    .clipAngle(90);
+
+			// Save the path generator for the current projection:
+			var path = d3.geo.path()
+			    .projection(projection)
+			    .pointRadius( function(d,i) {
+		    		return radius;
+		    	});
+
+			// Define the longitude and latitude scales, which allow us to map lon/lat coordinates to pixel values:
+			var lambda = d3.scale.linear()
+			    .domain([0, width])
+			    .range([-180, 180]);
+
+			var phi = d3.scale.linear()
+			    .domain([0, height])
+			    .range([90, -90]);
+
+			// Create the drawing canvas:
+			var svg = d3.select("body").append("svg:svg")
+			    .attr("width", '100%')
+			    .attr("height", '100%');
+
+			//Create a base circle: (could use this to color oceans)
+		    var backgroundCircle = svg.append("svg:circle")
+		        .attr('cx', width / 2)
+		        .attr('cy', height / 2)
+		        .attr('r', 0)
+		        .attr('class', 'geo-globe');
+								
+			// Make a <g> tag to group all our countries, which is useful for zoom purposes. (child elements belong to a 'group', which we can zoom all-at-once)
+		    var world = svg.append('svg:g');
+		    var zoomScale = 1; // default  
+		    
+		    // Create the element group to mark individual locations:
+		    var locations = svg.append('svg:g')
+		    	.attr('id', 'locations');
+
+		    // Having defined the projection, update the backgroundCircle radius:
+			backgroundCircle.attr('r', projection.scale() );
+
+		    
+		    // Construct our world map based on the projection:
+		    d3.json('data/world-countries.json', function(collection) { 
+		    	 
+				features = world.selectAll('path')
+					.data(collection.features)
+					.enter()
+					.append('svg:path')
+						.attr('class', 'geo-path')
+						.attr('d', path); 
+				
+				features.append('svg:title')
+					.text( function(d) { return d.properties.name; });
+			   
+			}); // end FUNCTION d3.json()
+
+		    // Load our location data:
+		    d3.json('data/data.geojson', function(collection) {
+
+				// Plot the positions on the map:
+			    circles = locations.selectAll('path')
+			    	.data(collection.features)
+			    	.enter()
+			    	.append('svg:path')
+			    		.attr('class', 'geo-node')
+			    		.attr('d', path)
+			    		.on('mouseover', mouseover)
+			            .on('mouseout', mouseout);
+
+			    circles.append('svg:title')
+			        .text( function(d) { return d.properties.name; } );
+
+			}); // end FUNCTION d3.json()            
+
+			// Specify a few event handlers to allow globe rotation:
+			d3.select(window)
+			    .on("mousemove", mousemove)
+			    .on("mouseup", mouseup);
+			
+			svg.on('mousedown', mousedown);
+
+			// Setup zoom behavior:
+		    var zoom = d3.behavior.zoom(true)
+		        .scale( projection.scale() )
+		        .scaleExtent([100, 800])
+		        .on("zoom", globeZoom);
+
+		    svg.call(zoom)
+		    	.on('dblclick.zoom', null);
+
+
+		    // MOUSE EVENTS //
+
+		    var mousePos;
+		    
+		    function mouseover(d, i) {
+		        	
+		    	path.pointRadius( function(d,i) {
+		    		return hoverRadius;
+		    	});
+		    	
+		    	// Increase the circle radius, so the user knows she is hovering over this node:
+		        d3.select(this).attr('d', path);                        
+		        
+		    }; // end FUNCTION mouseover(d,i)
+		    
+		    function mouseout(d, i) {
+		    	
+		    	path.pointRadius( function(d,i) {
+		    		return radius;
+		    	});
+		    	
+		    	// Reduce the circle radius to its pre-mouseover state:
+		        d3.select(this).attr('d', path);   
+		        
+		    }; // end FUNCTION mouseout(d,i)
+		    
+		   	function mousedown() {
+		    
+		    	// Determine mouse pixel coordinates:
+			  	mousePos = [d3.event.pageX, d3.event.pageY];
+			  	
+			  	// Prevent the default behavior for mouse down events:
+			  	d3.event.preventDefault();
+			  
+			}; // end FUNCTION mousedown()
+			
+			function mousemove() {
+
+				// Has the mouse button been released?
+			  	if (mousePos) {
+			  		
+			  		var p = d3.mouse(svg[0][0]);
+				    projection.rotate([lambda(p[0]), phi(p[1])]);
+				    svg.selectAll("path").attr("d", path);
+					
+			    };
+			  
+			}; // end FUNCTION mousemouse()
+			
+			function mouseup() {
+				
+				// Do we have mouse coordinates? 
+			  if (mousePos) {
+			  	
+			  	// Yes, so update the map based on the final mouse coordinates and clear the mouse position:	  	
+			    mousemove();
+			    mousePos = null;
+			    
+			  }; 
+			  
+			}; // end FUNCTION mouseup()
+		    
+		    
+		    
+		    // Helper functions //
+			
+			function globeZoom() {
+			    if (d3.event) {
+			    	var _scale = d3.event.scale;
+
+			        projection.scale(_scale);
+			        backgroundCircle.attr('r', _scale);
+			        path.pointRadius( radius );
+
+			        features.attr('d', path);
+    				circles.attr('d', path); 
+
+		    	}; // end IF
+		    };
+		</script>
+	</body>
+</html>

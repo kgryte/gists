@@ -1,0 +1,392 @@
+[
+	{
+		"original address": "London, UK",
+		"returned address": "London, UK",
+		"latitude": "51.5112139",
+		"longitude": "-0.1198244"
+	},
+	{
+		"original address": "Brooklyn, New York",
+		"returned address": "Brooklyn, NY, USA",
+		"latitude": "40.65",
+		"longitude": "-73.95"
+	},
+	{
+		"original address": "321 West 37th Street, Manhattan, New York, USA",
+		"returned address": "321 West 37th Street, New York, NY 10018, USA",
+		"latitude": "40.7545443",
+		"longitude": "-73.9930957"
+	},
+	{
+		"original address": "San Francisco, USA",
+		"returned address": "San Francisco, CA, USA",
+		"latitude": "37.7749295",
+		"longitude": "-122.4194155"
+	},
+	{
+		"original address": "Zurich, Switzerland",
+		"returned address": "Zurich, Switzerland",
+		"latitude": "47.3686498",
+		"longitude": "8.5391825"
+	},
+	{
+		"original address": "Prague",
+		"returned address": "Prague, Czech Republic",
+		"latitude": "50.0755381",
+		"longitude": "14.4378005"
+	},
+	{
+		"original address": "Nairobi, Kenya",
+		"returned address": "Nairobi, Kenya",
+		"latitude": "-1.2920659",
+		"longitude": "36.8219462"
+	},
+	{
+		"original address": "Beijing",
+		"returned address": "Beijing, China",
+		"latitude": "39.90403",
+		"longitude": "116.407526"
+	},
+	{
+		"original address": "Yellowstone National Park",
+		"returned address": "Yellowstone National Park, WY 82190, USA",
+		"latitude": "44.4225727",
+		"longitude": "-110.5866674"
+	},
+	{
+		"original address": "OX1 3PU",
+		"returned address": "Oxford, Oxfordshire OX1 3PU, UK",
+		"latitude": "51.7599982",
+		"longitude": "-1.256313"
+	},
+	{
+		"original address": "Saint Peter's University, Jersey City, NJ",
+		"returned address": "Saint Peter's University, 2641 John F Kennedy Boulevard West, Jersey City, NJ 07306, USA",
+		"latitude": "40.7266843",
+		"longitude": "-74.0712895"
+	},
+	{
+		"original address": "Valencia, Spain",
+		"returned address": "Valencia, Spain",
+		"latitude": "39.4699075",
+		"longitude": "-0.3762881"
+	},
+	{
+		"original address": "Barcelona, Spain",
+		"returned address": "Barcelona, Spain",
+		"latitude": "41.3850639",
+		"longitude": "2.1734035"
+	},
+	{
+		"original address": "Milan, Italy",
+		"returned address": "Milan, Italy",
+		"latitude": "45.4654542",
+		"longitude": "9.186516"
+	},
+	{
+		"original address": "Beersheva, Israel",
+		"returned address": "Beersheba, Israel",
+		"latitude": "31.252973",
+		"longitude": "34.791462"
+	},
+	{
+		"original address": "Tel Aviv, Israel",
+		"returned address": "Tel Aviv, Israel",
+		"latitude": "32.066158",
+		"longitude": "34.777819"
+	},
+	{
+		"original address": "Jerusalem, Israel",
+		"returned address": "Jerusalem, Israel",
+		"latitude": "31.768319",
+		"longitude": "35.21371"
+	},
+	{
+		"original address": "Eliat, Israel",
+		"returned address": "Eilat, Israel",
+		"latitude": "29.557669",
+		"longitude": "34.951925"
+	},
+	{
+		"original address": "Xi'an, China",
+		"returned address": "Xi'an, Shaanxi, China",
+		"latitude": "34.341568",
+		"longitude": "108.940175"
+	},
+	{
+		"original address": "Warsaw, Poland",
+		"returned address": "Warsaw, Poland",
+		"latitude": "52.2296756",
+		"longitude": "21.0122287"
+	},
+	{
+		"original address": "Krakow, Poland",
+		"returned address": "Kraków, Poland",
+		"latitude": "50.0646501",
+		"longitude": "19.9449799"
+	},
+	{
+		"original address": "Negril, Jamaica",
+		"returned address": "Negril, Jamaica",
+		"latitude": "18.273979",
+		"longitude": "-78.353142"
+	},
+	{
+		"original address": "Cancun, Mexico",
+		"returned address": "Cancún, Quintana Roo, Mexico",
+		"latitude": "21.158964",
+		"longitude": "-86.845937"
+	},
+	{
+		"original address": "Ann Arbor, MI",
+		"returned address": "Ann Arbor, MI, USA",
+		"latitude": "42.2808256",
+		"longitude": "-83.7430378"
+	},
+	{
+		"original address": "Madison, WI",
+		"returned address": "Madison, WI, USA",
+		"latitude": "43.0730517",
+		"longitude": "-89.4012302"
+	},
+	{
+		"original address": "Minneapolis, MN",
+		"returned address": "Minneapolis, MN, USA",
+		"latitude": "44.983334",
+		"longitude": "-93.26667"
+	},
+	{
+		"original address": "Lawrence, Kansas",
+		"returned address": "Lawrence, KS, USA",
+		"latitude": "38.9716689",
+		"longitude": "-95.2352501"
+	},
+	{
+		"original address": "Kirksville, MO",
+		"returned address": "Kirksville, MO 63501, USA",
+		"latitude": "40.1947539",
+		"longitude": "-92.5832496"
+	},
+	{
+		"original address": "St Louis, MO",
+		"returned address": "St. Louis, MO, USA",
+		"latitude": "38.6270025",
+		"longitude": "-90.1994042"
+	},
+	{
+		"original address": "Kansas City, MO",
+		"returned address": "Kansas City, MO, USA",
+		"latitude": "39.0997265",
+		"longitude": "-94.5785667"
+	},
+	{
+		"original address": "Jackson Hole, WY",
+		"returned address": "Jackson, WY, USA",
+		"latitude": "43.4799291",
+		"longitude": "-110.7624282"
+	},
+	{
+		"original address": "Los Angeles, CA",
+		"returned address": "Los Angeles, CA, USA",
+		"latitude": "34.0522342",
+		"longitude": "-118.2436849"
+	},
+	{
+		"original address": "San Diego, CA",
+		"returned address": "San Diego, CA, USA",
+		"latitude": "32.7153292",
+		"longitude": "-117.1572551"
+	},
+	{
+		"original address": "Los Altos, CA",
+		"returned address": "Los Altos, CA, USA",
+		"latitude": "37.3852183",
+		"longitude": "-122.1141298"
+	},
+	{
+		"original address": "Columbus, OH",
+		"returned address": "Columbus, OH, USA",
+		"latitude": "39.9611755",
+		"longitude": "-82.9987942"
+	},
+	{
+		"original address": "Coco Beach, FL",
+		"returned address": "Cocoa Beach, FL, USA",
+		"latitude": "28.3200067",
+		"longitude": "-80.6075513"
+	},
+	{
+		"original address": "Orlando, FL",
+		"returned address": "Orlando, FL, USA",
+		"latitude": "28.5383355",
+		"longitude": "-81.3792365"
+	},
+	{
+		"original address": "Atlanta, GA",
+		"returned address": "Atlanta, GA, USA",
+		"latitude": "33.7489954",
+		"longitude": "-84.3879824"
+	},
+	{
+		"original address": "Arkadelphia, AR",
+		"returned address": "Arkadelphia, AR, USA",
+		"latitude": "34.1209292",
+		"longitude": "-93.0537839"
+	},
+	{
+		"original address": "Philadelphia, PA",
+		"returned address": "Philadelphia, PA, USA",
+		"latitude": "39.952335",
+		"longitude": "-75.163789"
+	},
+	{
+		"original address": "Jersey City, NJ",
+		"returned address": "Jersey City, NJ, USA",
+		"latitude": "40.7281575",
+		"longitude": "-74.0776417"
+	},
+	{
+		"original address": "Manchester, UK",
+		"returned address": "Manchester, UK",
+		"latitude": "53.479251",
+		"longitude": "-2.247926"
+	},
+	{
+		"original address": "Paris, France",
+		"returned address": "Paris, France",
+		"latitude": "48.856614",
+		"longitude": "2.3522219"
+	},
+	{
+		"original address": "Honolulu, HI",
+		"returned address": "Honolulu, HI, USA",
+		"latitude": "21.3069444",
+		"longitude": "-157.8583333"
+	},
+	{
+		"original address": "Rovinj, Croatia",
+		"returned address": "Rovinj, Croatia",
+		"latitude": "45.0811661",
+		"longitude": "13.6387067"
+	},
+	{
+		"original address": "St Gallen, Switzerland",
+		"returned address": "St. Gallen, Switzerland",
+		"latitude": "47.4166667",
+		"longitude": "9.3666667"
+	},
+	{
+		"original address": "Amsterdam, The Netherlands",
+		"returned address": "Amsterdam, The Netherlands",
+		"latitude": "52.3702157",
+		"longitude": "4.8951679"
+	},
+	{
+		"original address": "Istanbul, Turkey",
+		"returned address": "Istanbul, Turkey",
+		"latitude": "41.00527",
+		"longitude": "28.97696"
+	},
+	{
+		"original address": "Olympus, Turkey",
+		"returned address": "Uludağ, 16370 Bursa Province, Turkey",
+		"latitude": "40.0736111",
+		"longitude": "29.2177777"
+	},
+	{
+		"original address": "Troy, Turkey",
+		"returned address": "Troia, Tevfikiye Köyü, 17060 İntepe/Çanakkale Province, Turkey",
+		"latitude": "39.9575",
+		"longitude": "26.2388889"
+	},
+	{
+		"original address": "Dallas, Texas",
+		"returned address": "Dallas, TX, USA",
+		"latitude": "32.7801399",
+		"longitude": "-96.8004511"
+	},
+	{
+		"original address": "Arlington, Texas",
+		"returned address": "Arlington, TX, USA",
+		"latitude": "32.735687",
+		"longitude": "-97.1080656"
+	},
+	{
+		"original address": "Ithaca, New York",
+		"returned address": "Ithaca, NY, USA",
+		"latitude": "42.4439614",
+		"longitude": "-76.5018807"
+	},
+	{
+		"original address": "Lewes, Delaware",
+		"returned address": "Lewes, DE, USA",
+		"latitude": "38.7745565",
+		"longitude": "-75.1393498"
+	},
+	{
+		"original address": "Washington, DC",
+		"returned address": "Washington, DC, USA",
+		"latitude": "38.8951118",
+		"longitude": "-77.0363658"
+	},
+	{
+		"original address": "State College, PA",
+		"returned address": "State College, PA, USA",
+		"latitude": "40.7933949",
+		"longitude": "-77.8600012"
+	},
+	{
+		"original address": "Chicago, IL",
+		"returned address": "Chicago, IL, USA",
+		"latitude": "41.8781136",
+		"longitude": "-87.6297982"
+	},
+	{
+		"original address": "Door County, WI",
+		"returned address": "Door, WI, USA",
+		"latitude": "44.8341302",
+		"longitude": "-87.3770488"
+	},
+	{
+		"original address": "Laax, Switzerland",
+		"returned address": "Laax, Switzerland",
+		"latitude": "46.8058842",
+		"longitude": "9.258219"
+	},
+	{
+		"original address": "Lake Tahoe, CA",
+		"returned address": "Lake Tahoe, United States",
+		"latitude": "39.1100901",
+		"longitude": "-120.0316916"
+	},
+	{
+		"original address": "Sunrise Beach, MO",
+		"returned address": "Sunrise Beach, MO, USA",
+		"latitude": "38.1758645",
+		"longitude": "-92.7843553"
+	},
+	{
+		"original address": "Boston, MA",
+		"returned address": "Boston, MA, USA",
+		"latitude": "42.3584308",
+		"longitude": "-71.0597732"
+	},
+	{
+		"original address": "Dayton, OH",
+		"returned address": "Dayton, OH, USA",
+		"latitude": "39.7589478",
+		"longitude": "-84.1916069"
+	},
+	{
+		"original address": "Pittsburgh, PA",
+		"returned address": "Pittsburgh, PA, USA",
+		"latitude": "40.4406248",
+		"longitude": "-79.9958864"
+	},
+	{
+		"original address": "New Orleans, LA",
+		"returned address": "New Orleans, LA, USA",
+		"latitude": "29.9510658",
+		"longitude": "-90.0715323"
+	}
+]

@@ -1,0 +1,850 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-0.1198244",
+					"51.5112139"
+				]
+			},
+			"properties": {
+				"name": "London, UK"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-73.95",
+					"40.65"
+				]
+			},
+			"properties": {
+				"name": "Brooklyn, NY, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-73.9930957",
+					"40.7545443"
+				]
+			},
+			"properties": {
+				"name": "321 West 37th Street, New York, NY 10018, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-122.4194155",
+					"37.7749295"
+				]
+			},
+			"properties": {
+				"name": "San Francisco, CA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"8.5391825",
+					"47.3686498"
+				]
+			},
+			"properties": {
+				"name": "Zurich, Switzerland"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"14.4378005",
+					"50.0755381"
+				]
+			},
+			"properties": {
+				"name": "Prague, Czech Republic"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"36.8219462",
+					"-1.2920659"
+				]
+			},
+			"properties": {
+				"name": "Nairobi, Kenya"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"116.407526",
+					"39.90403"
+				]
+			},
+			"properties": {
+				"name": "Beijing, China"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-110.5866674",
+					"44.4225727"
+				]
+			},
+			"properties": {
+				"name": "Yellowstone National Park, WY 82190, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-1.256313",
+					"51.7599982"
+				]
+			},
+			"properties": {
+				"name": "Oxford, Oxfordshire OX1 3PU, UK"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-74.0712895",
+					"40.7266843"
+				]
+			},
+			"properties": {
+				"name": "Saint Peter's University, 2641 John F Kennedy Boulevard West, Jersey City, NJ 07306, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-0.3762881",
+					"39.4699075"
+				]
+			},
+			"properties": {
+				"name": "Valencia, Spain"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"2.1734035",
+					"41.3850639"
+				]
+			},
+			"properties": {
+				"name": "Barcelona, Spain"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.186516",
+					"45.4654542"
+				]
+			},
+			"properties": {
+				"name": "Milan, Italy"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"34.791462",
+					"31.252973"
+				]
+			},
+			"properties": {
+				"name": "Beersheba, Israel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"34.777819",
+					"32.066158"
+				]
+			},
+			"properties": {
+				"name": "Tel Aviv, Israel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"35.21371",
+					"31.768319"
+				]
+			},
+			"properties": {
+				"name": "Jerusalem, Israel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"34.951925",
+					"29.557669"
+				]
+			},
+			"properties": {
+				"name": "Eilat, Israel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"108.940175",
+					"34.341568"
+				]
+			},
+			"properties": {
+				"name": "Xi'an, Shaanxi, China"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"21.0122287",
+					"52.2296756"
+				]
+			},
+			"properties": {
+				"name": "Warsaw, Poland"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"19.9449799",
+					"50.0646501"
+				]
+			},
+			"properties": {
+				"name": "Kraków, Poland"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-78.353142",
+					"18.273979"
+				]
+			},
+			"properties": {
+				"name": "Negril, Jamaica"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-86.845937",
+					"21.158964"
+				]
+			},
+			"properties": {
+				"name": "Cancún, Quintana Roo, Mexico"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-83.7430378",
+					"42.2808256"
+				]
+			},
+			"properties": {
+				"name": "Ann Arbor, MI, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-89.4012302",
+					"43.0730517"
+				]
+			},
+			"properties": {
+				"name": "Madison, WI, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-93.26667",
+					"44.983334"
+				]
+			},
+			"properties": {
+				"name": "Minneapolis, MN, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-95.2352501",
+					"38.9716689"
+				]
+			},
+			"properties": {
+				"name": "Lawrence, KS, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-92.5832496",
+					"40.1947539"
+				]
+			},
+			"properties": {
+				"name": "Kirksville, MO 63501, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-90.1994042",
+					"38.6270025"
+				]
+			},
+			"properties": {
+				"name": "St. Louis, MO, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-94.5785667",
+					"39.0997265"
+				]
+			},
+			"properties": {
+				"name": "Kansas City, MO, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-110.7624282",
+					"43.4799291"
+				]
+			},
+			"properties": {
+				"name": "Jackson, WY, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-118.2436849",
+					"34.0522342"
+				]
+			},
+			"properties": {
+				"name": "Los Angeles, CA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-117.1572551",
+					"32.7153292"
+				]
+			},
+			"properties": {
+				"name": "San Diego, CA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-122.1141298",
+					"37.3852183"
+				]
+			},
+			"properties": {
+				"name": "Los Altos, CA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-82.9987942",
+					"39.9611755"
+				]
+			},
+			"properties": {
+				"name": "Columbus, OH, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-80.6075513",
+					"28.3200067"
+				]
+			},
+			"properties": {
+				"name": "Cocoa Beach, FL, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-81.3792365",
+					"28.5383355"
+				]
+			},
+			"properties": {
+				"name": "Orlando, FL, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-84.3879824",
+					"33.7489954"
+				]
+			},
+			"properties": {
+				"name": "Atlanta, GA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-93.0537839",
+					"34.1209292"
+				]
+			},
+			"properties": {
+				"name": "Arkadelphia, AR, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-75.163789",
+					"39.952335"
+				]
+			},
+			"properties": {
+				"name": "Philadelphia, PA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-74.0776417",
+					"40.7281575"
+				]
+			},
+			"properties": {
+				"name": "Jersey City, NJ, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-2.247926",
+					"53.479251"
+				]
+			},
+			"properties": {
+				"name": "Manchester, UK"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"2.3522219",
+					"48.856614"
+				]
+			},
+			"properties": {
+				"name": "Paris, France"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-157.8583333",
+					"21.3069444"
+				]
+			},
+			"properties": {
+				"name": "Honolulu, HI, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"13.6387067",
+					"45.0811661"
+				]
+			},
+			"properties": {
+				"name": "Rovinj, Croatia"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.3666667",
+					"47.4166667"
+				]
+			},
+			"properties": {
+				"name": "St. Gallen, Switzerland"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"4.8951679",
+					"52.3702157"
+				]
+			},
+			"properties": {
+				"name": "Amsterdam, The Netherlands"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"28.97696",
+					"41.00527"
+				]
+			},
+			"properties": {
+				"name": "Istanbul, Turkey"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"29.2177777",
+					"40.0736111"
+				]
+			},
+			"properties": {
+				"name": "Uludağ, 16370 Bursa Province, Turkey"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"26.2388889",
+					"39.9575"
+				]
+			},
+			"properties": {
+				"name": "Troia, Tevfikiye Köyü, 17060 İntepe/Çanakkale Province, Turkey"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-96.8004511",
+					"32.7801399"
+				]
+			},
+			"properties": {
+				"name": "Dallas, TX, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-97.1080656",
+					"32.735687"
+				]
+			},
+			"properties": {
+				"name": "Arlington, TX, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-76.5018807",
+					"42.4439614"
+				]
+			},
+			"properties": {
+				"name": "Ithaca, NY, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-75.1393498",
+					"38.7745565"
+				]
+			},
+			"properties": {
+				"name": "Lewes, DE, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-77.0363658",
+					"38.8951118"
+				]
+			},
+			"properties": {
+				"name": "Washington, DC, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-77.8600012",
+					"40.7933949"
+				]
+			},
+			"properties": {
+				"name": "State College, PA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-87.6297982",
+					"41.8781136"
+				]
+			},
+			"properties": {
+				"name": "Chicago, IL, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-87.3770488",
+					"44.8341302"
+				]
+			},
+			"properties": {
+				"name": "Door, WI, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.258219",
+					"46.8058842"
+				]
+			},
+			"properties": {
+				"name": "Laax, Switzerland"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-120.0316916",
+					"39.1100901"
+				]
+			},
+			"properties": {
+				"name": "Lake Tahoe, United States"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-92.7843553",
+					"38.1758645"
+				]
+			},
+			"properties": {
+				"name": "Sunrise Beach, MO, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-71.0597732",
+					"42.3584308"
+				]
+			},
+			"properties": {
+				"name": "Boston, MA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-84.1916069",
+					"39.7589478"
+				]
+			},
+			"properties": {
+				"name": "Dayton, OH, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-79.9958864",
+					"40.4406248"
+				]
+			},
+			"properties": {
+				"name": "Pittsburgh, PA, USA"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"-90.0715323",
+					"29.9510658"
+				]
+			},
+			"properties": {
+				"name": "New Orleans, LA, USA"
+			}
+		}
+	]
+}
