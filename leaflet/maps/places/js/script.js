@@ -35,30 +35,28 @@ function createMap() {
     // Instantiate a tile layer, directing Leaflet to use the Open Street Map (OSM) API to access map tiles:
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         'maxZoom': maxZoom, 
-        'attribution': 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
+        'attribution': 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
     }).addTo(map);
 
+    // Add a watercolor layer: http://maps.stamen.com/#terrain/12/37.7706/-122.3782
+    // Comment this line out if you do not want a watercolor layer and remove the attribution above to Stamen Design.
+    var watercolor = new L.StamenTileLayer("watercolor")
+    	.addTo(map);
 
-    // Load JSON data:
+
+    // Load geoJSON data with jQuery:
+    $.getJSON('data/data.json', function(data) {
+
+    	// Use Leaflet to parse the data and display it as a layer on the map:
+		L.geoJson(data, {
+		    onEachFeature: function (feature, layer) {
+		        layer.bindPopup(feature.properties.name);
+		    }
+		}).addTo(map);
+
+	});
 
 
 }; // end FUNCTION createMap()
 
 
-/*
-// Create the desired markers:
-
-	for (var i = 0; i < maps[map].markers.length; i += 1) {
-
-		// Place the marker:
-		_marker = L.marker([maps[map].markers[i].lat, maps[map].markers[i].lon], {
-			'title': maps[map].markers[i].name
-		}).addTo(_map);
-
-		// Bind a popup to the marker:
-		_popup = '<h2>' + maps[map].markers[i].name + '</h2><p>' + maps[map].markers[i].desc + '</p>';
-
-		_marker.bindPopup( _popup );
-	
-	}; // end FOR i
-*/
