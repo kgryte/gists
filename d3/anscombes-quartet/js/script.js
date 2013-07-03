@@ -289,7 +289,7 @@ Chart.scatter = function() {
 
 	return chart;
 
-}; // end FUNCTION scatterChart()
+}; // end FUNCTION scatter()
 
 
 

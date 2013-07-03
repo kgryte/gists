@@ -1,0 +1,116 @@
+
+
+
+/* Apply a natural box layout model to all elements */
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #474747;
+	width: 100%;
+	min-height: 100%;
+}
+
+figure {
+	position: relative;
+	float: right;
+	width: 50%;
+	min-width: 400px;
+	margin-top: -120px;
+}
+
+h1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.title, .subtitle, .caption, .label, figure {
+	font-family: baskerville, serif;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 18px;
+	width: 400px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+	.title .small {
+		font-size: 12px;
+	}
+
+.subtitle {
+	font-size: 16px;
+	width: 50%;
+	min-width: 400px;
+	margin-top: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	.subtitle.left {
+		float: left;
+	}
+
+	.subtitle.right {
+		float: right;
+	}
+
+
+.caption {
+	position: relative;
+	top: -170px;
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	font-style: oblique;
+	font-size: 12px;
+}
+
+	.caption p {
+		margin: 0;
+		text-indent: 12px;
+	}
+
+.canvas {
+	font-family: 'Cabin', sans-serif;
+ 	font-size: 14px;
+ 	fill: #474747;
+ 	font-weight: normal;
+}
+
+.wedge {
+	stroke: #aaa;
+	stroke-width: 1px;
+	/*shape-rendering: crispEdges;*/
+}
+
+.label {
+	text-transform: uppercase;
+	font-size: 8px;
+}
+
+.disease {
+	fill: rgb(198, 226, 255);
+}
+
+.other {
+	fill: rgb(50,50,50);
+}
+
+.wounds {
+	fill: rgb(252,112,147);
+}
