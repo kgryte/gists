@@ -1,0 +1,64 @@
+
+
+
+/* Apply a natural box layout model to all elements */
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #474747;
+	width: 100%;
+	min-height: 100%;
+}
+
+h1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+figure {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.canvas {
+	font-family: 'Cabin', sans-serif;
+ 	font-size: 14px;
+ 	fill: #474747;
+ 	font-weight: normal;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #aaa;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.y.axis path {
+	stroke: none;
+}
+
+.point {
+	fill: rgb(255,166, 0);
+	stroke: rgb(227,121,0);
+	stroke-width: 2px;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+}

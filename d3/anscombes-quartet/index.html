@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Libraries -->
+		<script type="text/javascript" src="js/lib/d3.min.js"></script>
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<h1>Anscombe's Quartet</h1>
+
+		<script type="text/javascript">
+			var scatter = Chart.scatter();
+
+			// Update settings:
+			scatter.xDomain( [3.5, 19] )
+				.yDomain( [2, 12.5] )
+				.yTicks( 5 );
+
+			// Load the JSON data:
+			d3.json( 'data/data.json', function( data ) {
+
+				var figure, width;
+
+				// For each dataset in 'data', create a figure and graph the dataset along with its linear fit:
+				for (var i = 0; i < data.length; i++) {
+
+					// Append a new figure to the DOM:
+					figure = d3.select( 'body' )
+						.append( 'figure' );
+
+					// Get the figure width:
+					width = parseInt( figure.style( 'width' ), 10 );
+
+					// Update the chart generator settings:
+					scatter.width( width )
+						.xLabel( 'x' + (i+1) )
+						.yLabel( 'y' + (i+1) );
+
+					// Append the data and generate a new chart:
+					figure.datum( data[i] )
+						.attr('class', 'chart')
+						.call( scatter );	
+
+					// Compute the linear fit:
+					scatter.linearFit();
+
+				}; // end FOR i
+
+			});
+		</script>
+	</body>
+</html>
