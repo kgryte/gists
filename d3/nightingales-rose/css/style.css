@@ -34,12 +34,15 @@ h1 {
 	font-size: 24px;
 }
 
-.title, .subtitle, .caption, .label, figure {
+.title, .subtitle, .caption, .label, .legend, figure {
 	font-family: baskerville, serif;
 }
 
-.title {
+.title, .subtitle, .label, .legend {
 	text-transform: uppercase;
+}
+
+.title {
 	font-size: 18px;
 	width: 400px;
 	text-align: center;
@@ -58,7 +61,6 @@ h1 {
 	min-width: 400px;
 	margin-top: 16px;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 	.subtitle.left {
@@ -99,7 +101,6 @@ h1 {
 }
 
 .label {
-	text-transform: uppercase;
 	font-size: 8px;
 }
 
@@ -114,3 +115,24 @@ h1 {
 .wounds {
 	fill: rgb(252,112,147);
 }
+
+.legend {
+	width: 400px;
+	height: 50px;
+	padding: 0 20px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	top: -150px;
+	text-align: center;
+}
+
+.slider {
+	width: 400px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	left: -30px; /* hacky */
+	top: -100px;
+}
+

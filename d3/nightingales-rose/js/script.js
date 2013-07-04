@@ -2,6 +2,10 @@
 *
 *
 *
+*	NOTES:
+*		[1] Slider could be improved. No displayed limits. Values are hidden. Etc.
+*		[2] This chart's API is restricted and makes assumptions. E.g., legend entries provided to 'rose' and 'legend' are the same.
+*
 *
 *
 *	@author Kristofer Gryte. http://www.kgryte.com
@@ -29,7 +33,7 @@ Chart.rose = function() {
 		label = function(d) { return d.label; },
 		delay = 1000,
 		duration = 100,
-		canvas, graph, centerX, centerY, numWedges, wedgeGroups, wedges;
+		canvas, graph, centerX, centerY, numWedges, wedgeGroups, wedges, legendGroup;
 
 	// Arc Generator:
 	var arc = d3.svg.arc()
@@ -204,7 +208,7 @@ Chart.rose = function() {
 	  			})
 	  			.text( function(d) { return d.label; } );
 
-	}; // end FUNCTION createWedges()
+	}; // end FUNCTION createWedges()	
 
 	// Set/Get: margin
 	chart.margin = function( _ ) {
@@ -279,4 +283,112 @@ Chart.rose = function() {
 	return chart;
 
 }; // end FUNCTION rose()
+
+
+
+
+
+Chart.legend = function( entries ) {
+	// NOTE: positioning handled by CSS.
+
+	// Add a legend:
+	var legend = {}, 
+		height,
+		symbolRadius = 5;
+
+	legend.container = d3.select('body').append('div')
+		.attr('class', 'legend');
+
+	height = parseInt( d3.select('.legend').style('height'), 10);
+	legend.canvas = legend.container.append('svg:svg')
+			.attr('class', 'legend-canvas');
+
+	legend.entries = legend.canvas.selectAll('.legend-entry')
+		.data( entries )
+	  .enter().append('svg:g')
+	  	.attr('class', 'legend-entry')
+	  	.attr('transform', function(d,i) { return 'translate('+ (symbolRadius + i*120) +', ' + (height/2) + ')'; });
+
+	// Append circles to each entry with appropriate class:
+	legend.entries.append('svg:circle')
+		.attr('class', function(d) { return 'legend-symbol ' + d;} )
+		.attr('r', symbolRadius )
+		.attr('cy', 0 )
+		.attr('cx', 0 );
+
+	// Append text to each entry:
+	legend.entries.append('svg:text')
+		.attr('class', 'legend-text' )
+		.attr('text-anchor', 'start')
+		.attr('dy', '.35em')
+		.attr('transform', 'translate(' + (symbolRadius*2) + ',0)')
+		.text( function(d) { return d; } );
+
+	// Add interactivity:
+	legend.entries.on('mouseover.focus', mouseover)
+		.on('mouseout.focus', mouseout);
+
+	//
+	function mouseover() {
+
+		// Select the current element and get the symbol child class:
+		var _class = d3.select( this ).select('.legend-symbol')
+			.attr('class')
+			.replace('legend-symbol ', ''); // left with legend class.
+
+		d3.selectAll('.wedge')
+			.filter( function(d,i) {
+				// Select those elements not belonging to the same symbol class:
+				return !d3.select( this ).classed( _class );
+			})
+			.transition()
+				.duration( 1000 )
+				.attr('opacity', 0.05 );
+
+	}; // end FUNCTION mouseover()
+
+	function mouseout() {
+
+		d3.selectAll('.wedge')
+			.transition()
+				.duration( 500 )
+				.attr('opacity', 1 );
+
+	}; // end FUNCTION mouseout()
+
+}; // end FUNCTION legend()
+
+
+Chart.slider = function( minVal, maxVal, step ) {
+
+	d3.select('body').append('input')
+		.attr('class', 'slider')
+		.attr('type', 'range')
+		.attr('name', 'slider')
+		.attr('min', minVal)
+		.attr('max', maxVal)
+		.attr('step', 0.001)
+		.attr('value', maxVal);
+
+	d3.select("input").on("change", function() {
+	  var value = Math.round(this.value);
+
+	  d3.selectAll('.wedgeGroup')
+	  	.filter( function(d,i) { return i < value; } )
+	  	.transition()
+	  		.duration( 500 )
+	  		.attr( 'transform', 'scale(1,1)');
+	  
+	  d3.selectAll('.wedgeGroup')
+	  	.filter( function(d,i) { return i >= value; } )
+	  	.transition()
+	  		.duration( 500 )
+	  		.attr( 'transform', 'scale(0,0)' );
+
+	});
+
+
+}; // end FUNCTION slider()
+
+
 
