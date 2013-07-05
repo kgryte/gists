@@ -1,0 +1,170 @@
+
+
+
+/* Apply a natural box layout model to all elements */
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #474747;
+	width: 100%;
+	min-height: 100%;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+figure {
+	position: relative;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.half {
+	width: 50%;
+	min-width: 400px;
+}
+
+.quarter {
+	width: 25%;
+	min-width: 200px;
+}
+
+h1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.title, .legend {
+	font-family: baskerville, serif;
+}
+
+.title, .legend {
+	text-transform: uppercase;
+}
+
+.title {
+	font-size: 18px;
+	width: 400px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+	.title .small {
+		font-size: 12px;
+	}
+
+.canvas {
+	font-family: 'Cabin', sans-serif;
+ 	font-size: 14px;
+ 	fill: #474747;
+ 	font-weight: normal;
+}
+
+.rect {
+	stroke: rgb(240,240,240);
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.label {
+	font-size: 14px;
+}
+
+.axis path {
+	fill: none;
+}
+
+.y.axis path {
+	stroke: none;
+}
+
+.x.axis path {
+	stroke: #aaa;
+	stroke-width: 1px;
+}
+
+.axis line {
+	stroke: #aaa;
+	stroke-width: 1px;
+}
+
+
+
+.disease {
+	fill: rgb(198, 226, 255);
+}
+
+.other {
+	fill: rgb(50,50,50);
+}
+
+.wounds {
+	fill: rgb(252,112,147);
+}
+
+.disease.line{
+	stroke: rgb(198, 226, 255);
+	stroke-width: 4px;
+	fill: none;
+}
+
+.other.line {
+	stroke: rgb(50,50,50);
+	stroke-width: 4px;
+	fill: none;
+}
+
+.wounds.line {
+	stroke: rgb(252,112,147);
+	stroke-width: 4px;
+	fill: none;
+}
+
+.area {
+	stroke: none;
+}
+
+
+
+.legend {
+	width: 400px;
+	height: 50px;
+	padding: 0 20px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	top: -150px;
+	text-align: center;
+}
+
+.slider {
+	width: 400px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	left: -30px; /* hacky */
+	top: -100px;
+}
+
