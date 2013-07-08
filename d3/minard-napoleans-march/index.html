@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Napolean's March</title>
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Cabin:500' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Libraries -->
+		<script type="text/javascript" src="js/lib/d3.min.js"></script>
+		<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>	
+		<h1>Napolean's March</h1>
+		<script type="text/javascript">
+
+			var map = Chart.geo(),
+				temp = Chart.temp(),
+				height = 500;
+
+			// Append a new figure to the DOM:
+			figure = d3.select( 'body' )
+				.append( 'figure' )
+					.attr('class', 'chart');
+
+			// Get the figure width:
+			width = parseInt( figure.style( 'width' ), 10 );
+
+			// Update the chart generator settings:
+			map.width( width )
+				.height( height );							
+
+			// Generate a new chart:
+			figure.call( map );
+
+
+			// Load the march data:
+			d3.json('data/temperature.json', function( data ) { 
+
+				// Append a new figure to the DOM:
+				figure = d3.select( 'body' )
+					.append( 'figure' )
+						.attr('class', 'chart');
+
+				// Get the figure width:
+				width = parseInt( figure.style( 'width' ), 10 );
+
+				// Update the chart generator settings:
+				temp.width( width )
+					.height( 200 )
+					.yLabel( 'Temp in Celsius')
+					.xLabel( 'Longitude')
+					.x( function(d) { return d.lon; })
+					.y( function(d) { return d.temp; })
+					.label( function(d) { return d.date; });							
+
+				// Generate a new chart:
+				figure.datum( data )
+					.call( temp );
+			
+			});
+
+		</script>
+	</body>
+</html>

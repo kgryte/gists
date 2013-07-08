@@ -1,0 +1,106 @@
+
+
+
+/* Apply a natural box layout model to all elements */
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #474747;
+	width: 100%;
+	min-height: 100%;
+	margin-bottom: 200px;
+	position: relative;
+}
+
+figure {
+	position: relative;
+	float: left;
+	width: 100%;
+	min-width: 480px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.world .geo-path {
+	fill: #fff;
+	stroke: #ccc;
+	stroke-width: 4px;
+}
+
+.cities .geo-node path {
+	fill: steelblue; /*rgba(240,240,240,0.7);*/
+	stroke: rgba(240,240,240,0.5);
+	stroke-width: 0;
+}
+
+.cities .geo-node text {
+	stroke: none;
+	fill: steelblue;
+}
+
+.route .advance {
+	stroke: #FFCB96;
+}
+
+.route .retreat {
+	stroke: rgb(50,50,50);
+}
+
+.y.axis path {
+	fill: none;
+	stroke: none;
+}
+
+.y.axis line {
+	stroke: rgba(240,240,240, 0.8);
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 3px;
+}
+
+.point {
+	fill: steelblue;
+	stroke: none;
+}
+
+.river {
+	stroke: steelblue;
+	stroke-width: 3px;
+	fill: none;
+	opacity: 0.7;
+}
+
+.control {
+	cursor: pointer;
+}
+.control-symbol {
+	fill: rgb(50,50,50);
+	stroke: rgb(50,50,50);
+	stroke-width: 2px;
+}
+
+.hidden .control-symbol {
+	fill: none;
+}
+

@@ -145,7 +145,7 @@ Chart.line = function() {
 		dataset = graph.append('svg:g')
 			.attr('class', 'dataset');
 			
-		// Add a rectangle for each date:
+		// Add paths:
 		lines = dataset.selectAll('.line')
 			.data( data )
 		  .enter().append('svg:path')
